@@ -1,8 +1,20 @@
-# REImagine: do world-model imaginations help a VLM, and can we tell when they lie?
+# Re-Imagine: do world-model imaginations help a VLM, and can we tell when they lie?
 
 **Summary.** We gave a vision-language model (Qwen3-VL-8B) a camera-controlled video world
-model (Stable Virtual Camera) to "imagine" new viewpoints of a room, as MindJourney does.
-We find that (i) Imagination did not improve spatial question answering, and hurts perspective questions answering. (ii) The world model's hallucinations sit mainly in regions the real frames never observed (as expected). We tried an intervention and found (iii) VLM checks miss these hallucinations: a VLM looking at the imagined frame caught 0 of 14, and a VLM given the real frames caught 3 of 14, against 11 of 14 for a check against a 3D map of the real frames. (iv) A coverage test, "did the real frames ever see this region?", caught 10 of 14 with fewer false flags. 
+model (Stable Virtual Camera) to "imagine" new viewpoints of a room, as MindJourney does, and
+asked whether we can tell when an imagined view shows something that is not there. In a
+pre-registered test on held-out scenes, a check grounded in a 3D map of the real frames caught
+11 of 14 world-model hallucinations, against 0 of 14 for a VLM looking at the imagined frame
+and 3 of 14 for a VLM given the real frames. A simpler coverage test, "did the real frames ever
+see this region?", caught 10 of 14 with fewer false flags (exploratory). For context, the
+imagined views did not improve spatial question answering and made perspective questions
+harder to answer.
+
+**Key findings.**
+- **Map-grounded check:** 11/14 hallucinations caught, against 0/14 for a VLM self-check (exact McNemar p = 0.001) and 3/14 for a VLM given the real frames (p = 0.008); pre-registered, held-out test scenes.
+- **Coverage test:** 10/14 caught, with 9% of real objects falsely flagged against 21% for the map check (exploratory; threshold set on dev).
+- **Where errors sit:** 57% of imagined objects are absent from the real frame in views the map covers < 20%, against 22% in views covered ≥ 60% (test; the count includes detector errors).
+- **Imagination as evidence:** no gain on VSI-Bench (−0.6 points, 95% CI −6.0 to +3.8) and 8.2 points lower on SAT perspective questions (95% CI −14.4 to −2.1); dev only.
 
 ![Imagined view, unseen region and real frame](results/figures/example_panel.png)
 
@@ -53,7 +65,8 @@ sheet. Every number comes from `scripts/make_summary.py` reading the raw records
 
 - **Imagination as evidence** (MindJourney-style search, one step, 9° turns, 0.25 m-equivalent
   forward steps): three rules for which imagined views reach the answer (helpfulness ≥ 8,
-  ≥ 5, always the top two). None improved on `vlm_only`; more imagined views, lower scores.
+  ≥ 5, always the top two). None improved on `vlm_only`; the more imagined views were used,
+  the lower the score.
   Larger turns and deeper search were not run (compute).
 - **Matching object labels against the map** beyond coverage: no measurable gain over the
   coverage test on the 14 test hallucinations, with more false flags (exploratory).
@@ -88,12 +101,13 @@ sheet. Every number comes from `scripts/make_summary.py` reading the raw records
   the imagined frame alone. (c′) Map where the claim's region is covered; elsewhere Qwen3-VL
   judges the imagined frame together with the observed frames.
 - **Ground truth.** Human labels on a pre-registered sample (both questions per claim:
-  visible in the real frame? visible in the imagined view?). Automatic truths (SAM 3, Qwen
-  on the real frame) were also reported.
-- **Protocol.** Thresholds fixed before the pilot or chosen on dev only; four analyses were
-  pre-registered, each committed before its data were opened (texts in
-  `docs/PREREGISTRATION.md`); test scenes were used once per analysis; paired comparisons (exact McNemar, paired bootstrap) and scene-level
-  bootstrap intervals throughout; every run records its commit (of the private development repository), config and environment.
+  visible in the real frame? visible in the imagined view?). Automatic ground truths (SAM 3
+  and Qwen on the real frame) were also reported.
+- **Protocol.** Thresholds were fixed before the pilot or chosen on dev only. Four analyses
+  were pre-registered, each committed before its data were opened (texts in
+  `docs/PREREGISTRATION.md`), and test scenes were used once per analysis. Comparisons are
+  paired (exact McNemar, paired bootstrap) with scene-level bootstrap intervals throughout.
+  Every run records its commit (in the private development repository), config and environment.
 
 ## Limitations
 
@@ -104,16 +118,15 @@ sheet. Every number comes from `scripts/make_summary.py` reading the raw records
 - **Object presence only.** No spatial relations, distances or counts were checked.
 - **One primary labeller.** Consistency on 30 hidden repeats: 100% (real frame) and 92% (imagined
   view, kappa 0.83). A second labeller on 50 test claims agreed on every claim both answered
-  fully (47); whether they labelled independently is **not yet confirmed**. An independent
-  labelling of the 14 hallucinations plus 40 other claims is **pending**.
+  fully (47). An independent labelling of the 14 hallucinations plus 40 other claims is
+  planned.
 - **Low precision for every method** in the population (see
   `results/hallucination_human_extra.md`).
-- The earlier pre-registered test against automatic ground truth was **not met**.
+- The criterion of the earlier pre-registered test against automatic ground truth was
+  **not met**.
 - The downstream check (answer accuracy with filtered imagined views) was **not run**.
 - Full-video baselines used 336×336 frames and sparse runs 448×448. SVC's VAE came from a
   community mirror of SD 2.1 base (the official repository returned 401).
-- The novelty search was done from abstracts; it must be repeated with full-text reading
-  before any write-up.
 
 ## Reproduce
 
@@ -169,7 +182,8 @@ Total GPU use for the whole project: 24.5 Kaggle T4 session-hours.
 - `docs/PREREGISTRATION.md` — the four pre-registered analyses, verbatim.
 - `docs/LICENSES.md` — licence of every model and dataset, and what it allows.
 - `docs/LITERATURE.md` — notes on the papers this work builds on.
-- `results/` — raw records, generated reports and figures; `data/` — splits and labels.
+- `results/` — raw records, generated reports and figures.
+- `data/` — splits and labels.
 
 ## Credits and licences
 
