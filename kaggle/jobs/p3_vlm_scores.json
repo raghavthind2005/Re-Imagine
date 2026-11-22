@@ -1,0 +1,15 @@
+{
+  "kernel": "reimagine-p3-vlm-scores",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 5400,
+  "kernel_sources": [
+    "raghavthind05/reimagine-p2-hallucination-v2"
+  ],
+  "pip": "-U transformers==5.19.0 accelerate pyarrow opencv-python-headless pyyaml huggingface_hub",
+  "setup": [
+    "find /kaggle/input -maxdepth 6 -name results.jsonl | head; find /kaggle/input -name views.npz | wc -l"
+  ],
+  "commands": [
+    "{py} scripts/heldout_vlm_scores.py --views $(dirname $(find /kaggle/input -path '*heldout_imagine/results.jsonl' | head -1)) --objects $(dirname $(find /kaggle/input -path '*heldout_objects/views_shard0.jsonl' | head -1)) --out {work}/runs/heldout_vlm --cache-dir {work}/cache/vlm"
+  ]
+}

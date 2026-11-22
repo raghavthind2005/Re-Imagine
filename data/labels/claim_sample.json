@@ -1,0 +1,612 @@
+{
+ "meta": {
+  "seed": 20261014,
+  "per_cell": 25,
+  "source": "results/hallucination_v2",
+  "strata": "SAM 3 truth (invented/real) x view coverage (<0.2, 0.2-0.6, >=0.6)"
+ },
+ "split": {
+  "claims": [
+   {
+    "key": "arkitscenes__41069025|6|lamp",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__286b55a2bf|7|towel",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__44358499|1|pillow",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__45662924|1|tv",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__286b55a2bf|1|towel",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0146_01|7|stool",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|3|printer",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|1|bed",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0196_00|4|tv",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|4|table",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|7|printer",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__42446167|1|closet",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0500_00|1|window",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__44358499|6|trash bin",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0474_04|4|whiteboard",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0196_00|6|tv",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__47331972|3|window",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannet__scene0648_00|4|refrigerator",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0474_04|6|suitcase",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|7|chair",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__42446167|7|whiteboard",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|3|kettle",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "arkitscenes__41069025|2|door",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0574_01|1|trash bin",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__41069025|2|refrigerator",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "arkitscenes__45662924|7|radiator",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__44358499|7|tv",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|0|whiteboard",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__47333441|2|blanket",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__44358499|5|ceiling light",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__45662924|1|door",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|2|bookshelf",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__44358499|6|washer",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "arkitscenes__41069048|6|mirror",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__41069025|5|window",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|6|toilet",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|7|bed",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__45662924|5|lamp",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__42897629|7|chair",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|4|door",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|7|mirror",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0146_01|3|backpack",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__44358499|7|plant",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0500_00|0|table",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|2|whiteboard",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|0|table",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0146_01|2|telephone",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|6|computer mouse",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|1|mirror",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0474_04|2|sofa",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|5|chair",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__41069025|2|chair",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0196_00|4|door",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|5|ceiling light",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__41069048|1|door",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__47331990|4|window",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannet__scene0500_00|2|window",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|6|chair",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|5|telephone",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__47430038|7|bathtub",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|0|table",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__44358499|1|trash bin",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__47430038|1|kettle",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|5|lamp",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0196_00|0|table",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__47430038|0|trash bin",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__47430038|0|kettle",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__44358499|1|toilet",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__45662924|7|door",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__41069025|2|stool",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0648_00|2|backpack",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0474_04|5|chair",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__45662924|7|window",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__42446167|3|chair",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__41069025|7|door",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__44358499|6|refrigerator",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "arkitscenes__45662924|4|plant",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0146_01|5|fireplace",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0474_04|2|backpack",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0146_01|0|toilet",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__41069048|5|bathtub",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__45662924|6|tv",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0196_00|2|tv",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0500_00|3|chair",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__41069048|6|toilet",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__44358499|1|fireplace",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|6|ceiling light",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|3|trash bin",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|1|table",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0196_00|2|pillow",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0648_00|1|microwave",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0574_01|5|chair",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|5|computer mouse",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|4|toilet",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__41069048|5|toilet",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__45662924|2|tv",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__42446167|3|pillow",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__44358499|5|mirror",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0500_00|1|tv",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0648_00|5|closet",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|1|lamp",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0196_00|3|chair",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__41069048|7|window",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|5|laptop",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0196_00|2|chair",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0146_01|4|towel",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__42446167|6|lamp",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__42446167|3|bed",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__45662924|3|window",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0648_00|1|laptop",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0146_01|7|door",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|6|tv",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__47331990|6|table",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannet__scene0648_00|4|bookshelf",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0500_00|5|chair",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0574_01|7|door",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__47430038|3|kettle",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|1|pillow",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0500_00|6|table",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__41069048|5|towel",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannet__scene0500_00|6|chair",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__44358499|4|pillow",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|3|chair",
+    "stratum": "real/low"
+   },
+   {
+    "key": "scannetpp__286b55a2bf|4|whiteboard",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__42446167|1|trash bin",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0500_00|2|chair",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__45662924|3|plant",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0648_00|5|towel",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0500_00|3|window",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__42897629|7|radiator",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__42446167|6|ceiling light",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__45662924|6|table",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannet__scene0146_01|1|mirror",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__45662924|3|mirror",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "scannet__scene0648_00|5|pillow",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannetpp__5748ce6f01|7|chair",
+    "stratum": "real/high"
+   },
+   {
+    "key": "arkitscenes__47333441|2|bed",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__47333441|2|pillow",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__41069048|4|bathtub",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannet__scene0574_01|7|stool",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "arkitscenes__42897629|5|lamp",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannet__scene0474_04|1|whiteboard",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "scannet__scene0574_01|3|door",
+    "stratum": "real/high"
+   },
+   {
+    "key": "scannet__scene0146_01|6|window",
+    "stratum": "invented/high"
+   },
+   {
+    "key": "arkitscenes__47333441|3|pillow",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "scannet__scene0474_04|2|window",
+    "stratum": "real/low"
+   },
+   {
+    "key": "arkitscenes__42897629|6|door",
+    "stratum": "real/mid"
+   },
+   {
+    "key": "arkitscenes__47331972|3|plant",
+    "stratum": "invented/low"
+   },
+   {
+    "key": "arkitscenes__41069025|0|computer mouse",
+    "stratum": "invented/mid"
+   },
+   {
+    "key": "scannetpp__38d58a7a31|5|table",
+    "stratum": "real/mid"
+   }
+  ]
+ }
+}

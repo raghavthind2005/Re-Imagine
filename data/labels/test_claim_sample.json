@@ -1,0 +1,1397 @@
+{
+ "meta": {
+  "seed": 20261016,
+  "preregistered": "docs/PREREGISTRATION.md, section 4"
+ },
+ "split": {
+  "claims": [
+   {
+    "key": "arkitscenes__41142280|1|mirror",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41142280|5|door",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|0|backpack",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|0|chair",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|0|nightstand",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|1|bookshelf",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|3|chair",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|4|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|5|nightstand",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|5|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|5|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41159555|5|trash bin",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42897550|1|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42897550|1|plant",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42897550|1|window",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42897550|3|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42897550|4|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|0|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|0|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|0|trash bin",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|1|bed",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|1|blanket",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|1|nightstand",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|2|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|2|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|3|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|3|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|3|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|4|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|4|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42898849|7|chair",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42899698|2|ceiling light",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42899698|2|heater",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42899698|2|lamp",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42899698|6|ceiling light",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__42899698|7|suitcase",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__45663114|0|bathtub",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__45663114|0|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__45663114|3|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__45663114|5|lamp",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__45663114|7|nightstand",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__45663114|7|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47204578|1|stool",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47204578|2|tv",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47204578|4|lamp",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47204578|4|whiteboard",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|0|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|1|mirror",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|1|tv",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|4|window",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|6|ceiling light",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|6|lamp",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47331970|7|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|0|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|1|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|4|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|5|bed",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|5|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|5|suitcase",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|5|tv",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|5|whiteboard",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|6|refrigerator",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47333932|6|tv",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47429912|0|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47429912|1|kettle",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47429912|1|mirror",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47429912|3|laptop",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47429912|7|door",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__47429912|7|refrigerator",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0046_01|0|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0046_01|2|clock",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0046_01|2|lamp",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0046_01|5|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0046_01|6|bed",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|0|bookshelf",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|0|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|0|trash bin",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|3|keyboard",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|4|backpack",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|4|blanket",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0144_00|5|sofa",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|1|computer mouse",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|1|stool",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|1|toilet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|1|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|2|heater",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|3|blanket",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|3|heater",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|3|lamp",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|4|bathtub",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|5|backpack",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|5|microwave",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|5|table",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|6|computer mouse",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|6|monitor",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0221_01|7|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0356_00|5|basket",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0356_00|7|towel",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0633_00|0|blanket",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0633_00|1|bed",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0633_00|1|closet",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0633_00|4|table",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0633_00|7|chair",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0633_00|7|mirror",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0684_01|2|kettle",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0684_01|2|mirror",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannet__scene0684_01|3|refrigerator",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__40aec5fffa|2|kettle",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__40aec5fffa|5|refrigerator",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__40aec5fffa|6|window",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__b0a08200c9|3|suitcase",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__b0a08200c9|4|microwave",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__b0a08200c9|4|tv",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__b0a08200c9|6|microwave",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__b0a08200c9|6|radiator",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|1|keyboard",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|1|plant",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|1|stool",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|2|blanket",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|5|chair",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c4c04e6d6c|1|stool",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c4c04e6d6c|3|trash bin",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c4c04e6d6c|4|door",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "scannetpp__c4c04e6d6c|4|pillow",
+    "sam3_invented": true,
+    "group": "sam3_invented_census",
+    "weight": 1.0
+   },
+   {
+    "key": "arkitscenes__41142280|3|bathtub",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__41159555|0|blanket",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__41159555|0|pillow",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__41159555|4|closet",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__42897550|3|trash bin",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__42898849|2|lamp",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__42898849|7|window",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__42899698|7|bathtub",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__45663114|2|window",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__45663114|3|toilet",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__47204578|0|door",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__47204578|1|lamp",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__47204578|1|mirror",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__47204578|1|pillow",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__47331970|0|table",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__47331970|1|refrigerator",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0046_01|0|door",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0046_01|1|table",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0046_01|2|bed",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0046_01|4|trash bin",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0046_01|5|towel",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0144_00|0|monitor",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0144_00|1|blanket",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0144_00|4|chair",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0144_00|5|chair",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0144_00|5|laptop",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0356_00|0|plant",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0356_00|6|bed",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0633_00|0|basket",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0633_00|5|bed",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0684_01|3|chair",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0684_01|3|table",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0684_01|3|telephone",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannet__scene0684_01|7|table",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannetpp__40aec5fffa|2|door",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannetpp__40aec5fffa|7|door",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|1|monitor",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|5|monitor",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannetpp__c49a8c6cff|5|tv",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "scannetpp__c4c04e6d6c|7|door",
+    "sam3_invented": false,
+    "group": "sam3_real_sample",
+    "weight": 6.625
+   },
+   {
+    "key": "arkitscenes__41069025|2|stool",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__41069025|6|lamp",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__41069048|6|mirror",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__41069048|6|toilet",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__42446167|1|pillow",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__42897629|7|radiator",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__44358499|1|trash bin",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__44358499|5|mirror",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__44358499|7|tv",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__45662924|6|table",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__45662924|7|door",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__45662924|7|radiator",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "arkitscenes__47333441|3|pillow",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0146_01|1|mirror",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0196_00|2|chair",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0474_04|2|window",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0474_04|4|whiteboard",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0500_00|0|table",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0500_00|3|chair",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0500_00|6|chair",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0574_01|3|door",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0574_01|5|chair",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0574_01|7|stool",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannet__scene0648_00|5|closet",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannetpp__38d58a7a31|6|computer mouse",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannetpp__5748ce6f01|0|table",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannetpp__5748ce6f01|4|table",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannetpp__5748ce6f01|6|ceiling light",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|2|bookshelf",
+    "group": "dev_repeat",
+    "weight": 0.0
+   },
+   {
+    "key": "scannetpp__d755b3d9d8|7|printer",
+    "group": "dev_repeat",
+    "weight": 0.0
+   }
+  ],
+  "sheet_order": [
+   "scannet__scene0221_01|7|towel",
+   "arkitscenes__47331970|1|tv",
+   "scannet__scene0144_00|4|chair",
+   "scannet__scene0144_00|0|monitor",
+   "scannet__scene0144_00|0|trash bin",
+   "arkitscenes__42898849|7|window",
+   "arkitscenes__45663114|7|towel",
+   "arkitscenes__41159555|0|backpack",
+   "arkitscenes__45663114|0|bathtub",
+   "arkitscenes__44358499|7|tv",
+   "scannetpp__c49a8c6cff|1|keyboard",
+   "scannet__scene0356_00|0|plant",
+   "arkitscenes__45662924|7|radiator",
+   "arkitscenes__41159555|5|towel",
+   "arkitscenes__45663114|0|toilet",
+   "scannet__scene0221_01|6|monitor",
+   "scannetpp__40aec5fffa|6|window",
+   "arkitscenes__42898849|0|trash bin",
+   "arkitscenes__45662924|6|table",
+   "scannet__scene0633_00|1|closet",
+   "arkitscenes__41069048|6|toilet",
+   "arkitscenes__42898849|2|pillow",
+   "arkitscenes__42897550|1|plant",
+   "scannet__scene0633_00|7|chair",
+   "arkitscenes__41159555|4|towel",
+   "scannet__scene0221_01|5|microwave",
+   "scannet__scene0684_01|3|telephone",
+   "scannetpp__c49a8c6cff|1|plant",
+   "arkitscenes__47333932|5|suitcase",
+   "arkitscenes__42898849|4|sofa",
+   "scannet__scene0574_01|3|door",
+   "arkitscenes__47333441|3|pillow",
+   "arkitscenes__41069048|6|mirror",
+   "scannet__scene0144_00|4|blanket",
+   "arkitscenes__47429912|7|refrigerator",
+   "arkitscenes__42897550|1|pillow",
+   "scannet__scene0633_00|1|bed",
+   "scannet__scene0144_00|3|keyboard",
+   "arkitscenes__42898849|3|toilet",
+   "scannet__scene0221_01|1|towel",
+   "arkitscenes__45663114|3|toilet",
+   "arkitscenes__41142280|1|mirror",
+   "arkitscenes__47333932|4|pillow",
+   "arkitscenes__42446167|1|pillow",
+   "arkitscenes__41159555|5|nightstand",
+   "scannet__scene0221_01|5|backpack",
+   "arkitscenes__47333932|5|tv",
+   "scannetpp__c4c04e6d6c|7|door",
+   "arkitscenes__41159555|0|nightstand",
+   "arkitscenes__41142280|3|bathtub",
+   "scannet__scene0633_00|4|table",
+   "arkitscenes__47204578|4|whiteboard",
+   "scannetpp__38d58a7a31|6|computer mouse",
+   "scannetpp__c49a8c6cff|1|stool",
+   "arkitscenes__44358499|1|trash bin",
+   "arkitscenes__47331970|6|ceiling light",
+   "arkitscenes__42898849|1|nightstand",
+   "scannet__scene0356_00|7|towel",
+   "arkitscenes__42898849|3|sofa",
+   "arkitscenes__45663114|3|towel",
+   "scannet__scene0144_00|5|laptop",
+   "arkitscenes__47331970|1|mirror",
+   "arkitscenes__47331970|0|towel",
+   "scannet__scene0046_01|2|lamp",
+   "scannet__scene0046_01|0|door",
+   "arkitscenes__42899698|7|bathtub",
+   "arkitscenes__47331970|0|table",
+   "scannet__scene0356_00|5|basket",
+   "arkitscenes__47333932|5|bed",
+   "arkitscenes__42897550|1|window",
+   "scannet__scene0221_01|2|heater",
+   "arkitscenes__47429912|1|kettle",
+   "arkitscenes__42898849|0|pillow",
+   "scannet__scene0633_00|0|basket",
+   "scannet__scene0046_01|4|trash bin",
+   "scannetpp__c4c04e6d6c|3|trash bin",
+   "scannet__scene0221_01|3|heater",
+   "arkitscenes__42899698|2|lamp",
+   "scannet__scene0684_01|7|table",
+   "scannet__scene0221_01|1|stool",
+   "scannet__scene0684_01|2|kettle",
+   "scannetpp__5748ce6f01|6|ceiling light",
+   "scannet__scene0574_01|7|stool",
+   "arkitscenes__47204578|2|tv",
+   "arkitscenes__42898849|1|blanket",
+   "arkitscenes__44358499|5|mirror",
+   "arkitscenes__41159555|4|closet",
+   "arkitscenes__47333932|0|toilet",
+   "scannetpp__40aec5fffa|7|door",
+   "scannet__scene0356_00|6|bed",
+   "scannetpp__c49a8c6cff|5|chair",
+   "arkitscenes__47204578|1|stool",
+   "arkitscenes__47429912|3|laptop",
+   "arkitscenes__41069025|2|stool",
+   "scannet__scene0221_01|5|table",
+   "scannet__scene0144_00|1|blanket",
+   "arkitscenes__47333932|1|towel",
+   "arkitscenes__45662924|7|door",
+   "scannet__scene0221_01|3|lamp",
+   "arkitscenes__47429912|0|toilet",
+   "scannet__scene0684_01|3|chair",
+   "scannetpp__c49a8c6cff|5|monitor",
+   "arkitscenes__47331970|4|window",
+   "scannetpp__b0a08200c9|4|microwave",
+   "arkitscenes__41159555|5|trash bin",
+   "arkitscenes__42897550|4|pillow",
+   "scannetpp__40aec5fffa|2|door",
+   "scannet__scene0046_01|5|towel",
+   "scannetpp__40aec5fffa|5|refrigerator",
+   "arkitscenes__42898849|3|pillow",
+   "arkitscenes__42899698|6|ceiling light",
+   "scannet__scene0633_00|5|bed",
+   "arkitscenes__42899698|2|ceiling light",
+   "scannet__scene0474_04|4|whiteboard",
+   "arkitscenes__41159555|0|chair",
+   "scannet__scene0500_00|0|table",
+   "scannet__scene0684_01|2|mirror",
+   "arkitscenes__41159555|1|bookshelf",
+   "arkitscenes__41142280|5|door",
+   "arkitscenes__47331970|1|refrigerator",
+   "arkitscenes__47429912|7|door",
+   "arkitscenes__47331970|7|sofa",
+   "arkitscenes__42898849|1|bed",
+   "arkitscenes__42897550|3|trash bin",
+   "scannet__scene0221_01|6|computer mouse",
+   "scannet__scene0221_01|4|bathtub",
+   "scannetpp__b0a08200c9|6|radiator",
+   "arkitscenes__41159555|0|pillow",
+   "arkitscenes__42897550|3|toilet",
+   "scannet__scene0474_04|2|window",
+   "arkitscenes__42898849|0|sofa",
+   "arkitscenes__47204578|1|mirror",
+   "arkitscenes__47331970|6|lamp",
+   "scannetpp__5748ce6f01|0|table",
+   "scannetpp__c4c04e6d6c|4|pillow",
+   "arkitscenes__42898849|2|sofa",
+   "scannet__scene0144_00|4|backpack",
+   "scannet__scene0500_00|3|chair",
+   "arkitscenes__47204578|0|door",
+   "scannet__scene0046_01|2|clock",
+   "arkitscenes__47333932|5|whiteboard",
+   "arkitscenes__47333932|5|pillow",
+   "scannet__scene0648_00|5|closet",
+   "arkitscenes__42899698|2|heater",
+   "scannet__scene0196_00|2|chair",
+   "scannetpp__5748ce6f01|4|table",
+   "scannet__scene0221_01|3|blanket",
+   "scannet__scene0144_00|5|sofa",
+   "arkitscenes__47429912|1|mirror",
+   "scannet__scene0046_01|2|bed",
+   "arkitscenes__42898849|4|pillow",
+   "scannet__scene0046_01|1|table",
+   "arkitscenes__41159555|5|pillow",
+   "arkitscenes__42897629|7|radiator",
+   "scannet__scene0633_00|7|mirror",
+   "scannet__scene0144_00|0|bookshelf",
+   "arkitscenes__41159555|3|chair",
+   "arkitscenes__41159555|0|blanket",
+   "scannet__scene0046_01|0|pillow",
+   "scannet__scene0144_00|5|chair",
+   "arkitscenes__47204578|4|lamp",
+   "scannet__scene0500_00|6|chair",
+   "scannet__scene0684_01|3|refrigerator",
+   "arkitscenes__45663114|5|lamp",
+   "scannet__scene0146_01|1|mirror",
+   "scannetpp__b0a08200c9|6|microwave",
+   "scannetpp__c4c04e6d6c|1|stool",
+   "scannet__scene0221_01|1|computer mouse",
+   "scannetpp__c49a8c6cff|2|blanket",
+   "arkitscenes__45663114|2|window",
+   "scannetpp__d755b3d9d8|2|bookshelf",
+   "arkitscenes__42898849|7|chair",
+   "scannet__scene0144_00|0|sofa",
+   "scannetpp__c49a8c6cff|1|monitor",
+   "scannet__scene0046_01|6|bed",
+   "scannet__scene0221_01|1|toilet",
+   "scannetpp__c49a8c6cff|5|tv",
+   "scannetpp__b0a08200c9|3|suitcase",
+   "arkitscenes__47204578|1|pillow",
+   "arkitscenes__47204578|1|lamp",
+   "arkitscenes__45663114|7|nightstand",
+   "scannetpp__b0a08200c9|4|tv",
+   "arkitscenes__41069025|6|lamp",
+   "arkitscenes__42898849|2|lamp",
+   "scannet__scene0046_01|5|toilet",
+   "scannetpp__d755b3d9d8|7|printer",
+   "scannet__scene0633_00|0|blanket",
+   "arkitscenes__47333932|6|refrigerator",
+   "arkitscenes__42899698|7|suitcase",
+   "scannetpp__c4c04e6d6c|4|door",
+   "scannet__scene0574_01|5|chair",
+   "scannet__scene0684_01|3|table",
+   "arkitscenes__47333932|6|tv",
+   "scannetpp__40aec5fffa|2|kettle"
+  ],
+  "second_labeller_order": [
+   "arkitscenes__47333932|0|toilet",
+   "arkitscenes__42899698|6|ceiling light",
+   "arkitscenes__42898849|7|chair",
+   "arkitscenes__47333932|6|tv",
+   "arkitscenes__41159555|0|pillow",
+   "scannet__scene0633_00|5|bed",
+   "scannet__scene0633_00|7|mirror",
+   "scannet__scene0046_01|0|door",
+   "arkitscenes__41159555|5|pillow",
+   "arkitscenes__47333932|6|refrigerator",
+   "scannet__scene0221_01|1|computer mouse",
+   "arkitscenes__47331970|6|lamp",
+   "scannet__scene0221_01|1|towel",
+   "scannet__scene0144_00|0|bookshelf",
+   "arkitscenes__42897550|4|pillow",
+   "arkitscenes__41159555|0|blanket",
+   "scannet__scene0221_01|1|toilet",
+   "scannet__scene0144_00|5|laptop",
+   "scannet__scene0221_01|3|heater",
+   "arkitscenes__41159555|4|closet",
+   "scannet__scene0633_00|1|closet",
+   "arkitscenes__41142280|3|bathtub",
+   "arkitscenes__41159555|5|towel",
+   "arkitscenes__47331970|4|window",
+   "scannetpp__c4c04e6d6c|3|trash bin",
+   "arkitscenes__47429912|3|laptop",
+   "scannetpp__b0a08200c9|6|radiator",
+   "scannet__scene0356_00|6|bed",
+   "scannet__scene0046_01|1|table",
+   "scannetpp__b0a08200c9|4|tv",
+   "scannetpp__c49a8c6cff|5|chair",
+   "arkitscenes__42899698|2|lamp",
+   "scannet__scene0684_01|3|table",
+   "scannet__scene0144_00|1|blanket",
+   "arkitscenes__42898849|3|sofa",
+   "arkitscenes__45663114|7|nightstand",
+   "scannet__scene0356_00|0|plant",
+   "scannetpp__c4c04e6d6c|4|door",
+   "arkitscenes__42897550|1|window",
+   "arkitscenes__42898849|0|pillow",
+   "arkitscenes__42897550|1|plant",
+   "arkitscenes__42898849|7|window",
+   "scannetpp__c4c04e6d6c|1|stool",
+   "arkitscenes__47204578|1|pillow",
+   "scannet__scene0144_00|3|keyboard",
+   "scannetpp__40aec5fffa|2|kettle",
+   "arkitscenes__47429912|1|kettle",
+   "arkitscenes__41159555|0|chair",
+   "arkitscenes__47331970|1|tv",
+   "scannet__scene0144_00|0|sofa"
+  ],
+  "counts": {
+   "sam3_invented": 124,
+   "sam3_real": 265,
+   "sam3_real_sampled": 40
+  }
+ }
+}

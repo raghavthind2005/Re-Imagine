@@ -1,0 +1,21 @@
+config_file: configs/p1_vlm_only_vsi_dev_full32_qwen8b_v3.yaml
+data:
+  benchmark: vsibench
+  jsonl: cache/hf/VSI-Bench/test.jsonl
+  split: dev
+  split_file: data/splits/vsibench.json
+  video_root: cache/vsibench_videos
+generation:
+  max_tokens: 16
+  temperature: 0.0
+limit: 300
+name: p1_vlm_only_vsi_dev_full32_qwen8b_v3
+seed: 0
+view:
+  mode: full
+  n_frames: 32
+vlm:
+  backend: qwen_local
+  dtype: float16
+  max_pixels: 112896
+  model_id: Qwen/Qwen3-VL-8B-Instruct

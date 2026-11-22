@@ -1,0 +1,20 @@
+# v3: 336 x 336 per frame. v2 (448 x 448, 32 frames) ran out of memory in the vision tower on a T4.
+name: p1_vlm_only_vsi_dev_full32_qwen8b_v3
+seed: 0
+data:
+  benchmark: vsibench
+  split: dev
+  split_file: data/splits/vsibench.json
+  jsonl: cache/hf/VSI-Bench/test.jsonl
+  video_root: cache/vsibench_videos
+view:
+  mode: full
+  n_frames: 32
+vlm:
+  backend: qwen_local
+  model_id: Qwen/Qwen3-VL-8B-Instruct
+  dtype: float16
+  max_pixels: 112896
+generation:
+  max_tokens: 16
+  temperature: 0.0

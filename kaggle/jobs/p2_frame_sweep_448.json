@@ -1,0 +1,15 @@
+{
+  "kernel": "reimagine-p2-frame-sweep-448",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 5400,
+  "pip": "-U transformers accelerate pyarrow opencv-python-headless pyyaml huggingface_hub",
+  "setup": [
+    "hf download nyu-visionx/VSI-Bench test.jsonl arkitscenes.zip scannet.zip scannetpp.zip --repo-type dataset --local-dir cache/hf/VSI-Bench",
+    "mkdir -p cache/vsibench_videos && cd cache/vsibench_videos && for z in arkitscenes scannet scannetpp; do unzip -q -o ../hf/VSI-Bench/$z.zip; done && ls | head && ls */ | head -5 && find . -name '*.mp4' | wc -l"
+  ],
+  "commands": [
+    "{py} scripts/run_eval.py --config configs/p2_vlm_only_vsi_sub200_sparse4_448_qwen8b_v1.yaml --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/run_eval.py --config configs/p2_vlm_only_vsi_sub200_sparse8_448_qwen8b_v1.yaml --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/run_eval.py --config configs/p2_vlm_only_vsi_sub200_sparse16_448_qwen8b_v1.yaml --runs-root {work}/runs --cache-dir {work}/cache/vlm"
+  ]
+}

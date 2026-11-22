@@ -1,0 +1,29 @@
+# secrets
+.env
+.env.*
+
+# run outputs and caches (regenerable)
+runs/
+cache/
+.cache/
+*.ckpt
+*.safetensors
+*.pt
+*.bin
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
+labelling/
+

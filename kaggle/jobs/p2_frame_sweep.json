@@ -1,0 +1,19 @@
+{
+  "kernel": "reimagine-p2-frame-sweep",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 10800,
+  "pip": "-U transformers accelerate pyarrow opencv-python-headless pyyaml huggingface_hub einops safetensors",
+  "setup": [
+    "pip install -q --no-deps git+https://github.com/facebookresearch/vggt@a288dd0f14786c93483e45524328726ab7b1b4ce && python3 -c \"from vggt.models.vggt import VGGT; import torch; print('vggt ok, torch', torch.__version__)\"",
+    "hf download array/SAT SAT_val.parquet SAT_test.parquet --repo-type dataset --local-dir cache/hf/SAT",
+    "hf download nyu-visionx/VSI-Bench test.jsonl arkitscenes.zip scannet.zip scannetpp.zip --repo-type dataset --local-dir cache/hf/VSI-Bench",
+    "mkdir -p cache/vsibench_videos && cd cache/vsibench_videos && for z in arkitscenes scannet scannetpp; do unzip -q -o ../hf/VSI-Bench/$z.zip; done && ls | head && ls */ | head -5 && find . -name '*.mp4' | wc -l"
+  ],
+  "commands": [
+    "{py} scripts/frame_sweep_geometry.py --out {work}/runs/frame_sweep/geometry.jsonl --limit-scenes 2 --ks 16",
+    "{py} scripts/run_eval.py --config configs/p2_vlm_only_sat_dev_circular_qwen8b_v1.yaml --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/run_eval.py --config configs/p2_vlm_only_vsi_sub200_sparse4_qwen8b_v1.yaml --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/run_eval.py --config configs/p2_vlm_only_vsi_sub200_sparse16_qwen8b_v1.yaml --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/frame_sweep_geometry.py --out {work}/runs/frame_sweep/geometry.jsonl"
+  ]
+}

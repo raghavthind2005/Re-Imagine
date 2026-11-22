@@ -1,0 +1,23 @@
+# v2: images are resized in the backend (v1's max_pixels was ignored by the processor).
+name: p1_vlm_only_vsi_dev_full32_qwen8b_v2
+seed: 0
+data:
+  benchmark: vsibench
+  split: dev
+  split_file: data/splits/vsibench.json
+  jsonl: cache/hf/VSI-Bench/test.jsonl
+  video_root: cache/vsibench_videos
+view:
+  mode: full
+  n_frames: 32
+vlm:
+  backend: qwen_local
+  model_id: Qwen/Qwen3-VL-8B-Instruct
+  dtype: float16
+  max_pixels: 200704
+  max_memory:
+    0: 5GiB
+    1: 14GiB
+generation:
+  max_tokens: 16
+  temperature: 0.0

@@ -1,0 +1,20 @@
+name: p1_vlm_only_vsi_dev_sparse8_qwen8b_v1
+seed: 0
+data:
+  benchmark: vsibench
+  split: dev
+  split_file: data/splits/vsibench.json
+  jsonl: cache/hf/VSI-Bench/test.jsonl
+  video_root: cache/vsibench_videos
+view:
+  mode: sparse
+  n_observed: 8
+  n_heldout: 8
+vlm:
+  backend: qwen_local
+  model_id: Qwen/Qwen3-VL-8B-Instruct
+  dtype: float16
+  max_pixels: 200704   # 448 x 448 per frame
+generation:
+  max_tokens: 16
+  temperature: 0.0

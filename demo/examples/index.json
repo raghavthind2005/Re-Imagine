@@ -1,0 +1,1101 @@
+[
+ {
+  "id": "arkitscenes/41069025 \u00b7 camera 0",
+  "dir": "arkitscenes__41069025_0",
+  "map_coverage": 0.223,
+  "claims": [
+   {
+    "label": "computer mouse",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.01,
+    "human": "detector error"
+   },
+   {
+    "label": "table",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.27,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069025 \u00b7 camera 2",
+  "dir": "arkitscenes__41069025_2",
+  "map_coverage": 0.351,
+  "claims": [
+   {
+    "label": "chair",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.99,
+    "human": "not labelled"
+   },
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.53,
+    "human": "detector error"
+   },
+   {
+    "label": "refrigerator",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.13,
+    "human": "detector error"
+   },
+   {
+    "label": "stool",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.99,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069025 \u00b7 camera 5",
+  "dir": "arkitscenes__41069025_5",
+  "map_coverage": 0.0,
+  "claims": [
+   {
+    "label": "towel",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   },
+   {
+    "label": "window",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069025 \u00b7 camera 6",
+  "dir": "arkitscenes__41069025_6",
+  "map_coverage": 0.241,
+  "claims": [
+   {
+    "label": "lamp",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   },
+   {
+    "label": "pillow",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.86,
+    "human": "not labelled"
+   },
+   {
+    "label": "sofa",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.27,
+    "human": "not labelled"
+   },
+   {
+    "label": "towel",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.86,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069025 \u00b7 camera 7",
+  "dir": "arkitscenes__41069025_7",
+  "map_coverage": 0.103,
+  "claims": [
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.06,
+    "human": "detector error"
+   },
+   {
+    "label": "microwave",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.71,
+    "human": "not labelled"
+   },
+   {
+    "label": "mirror",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.08,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069048 \u00b7 camera 1",
+  "dir": "arkitscenes__41069048_1",
+  "map_coverage": 0.121,
+  "claims": [
+   {
+    "label": "ceiling light",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.86,
+    "human": "not labelled"
+   },
+   {
+    "label": "door",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069048 \u00b7 camera 4",
+  "dir": "arkitscenes__41069048_4",
+  "map_coverage": 0.082,
+  "claims": [
+   {
+    "label": "bathtub",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.0,
+    "human": "detector error"
+   },
+   {
+    "label": "door",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   },
+   {
+    "label": "towel",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069048 \u00b7 camera 5",
+  "dir": "arkitscenes__41069048_5",
+  "map_coverage": 0.17,
+  "claims": [
+   {
+    "label": "bathtub",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.22,
+    "human": "detector error"
+   },
+   {
+    "label": "toilet",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 1.0,
+    "human": "detector error"
+   },
+   {
+    "label": "towel",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.04,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069048 \u00b7 camera 6",
+  "dir": "arkitscenes__41069048_6",
+  "map_coverage": 0.153,
+  "claims": [
+   {
+    "label": "lamp",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   },
+   {
+    "label": "mirror",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "real object"
+   },
+   {
+    "label": "toilet",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/41069048 \u00b7 camera 7",
+  "dir": "arkitscenes__41069048_7",
+  "map_coverage": 0.0,
+  "claims": [
+   {
+    "label": "window",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42446167 \u00b7 camera 1",
+  "dir": "arkitscenes__42446167_1",
+  "map_coverage": 0.514,
+  "claims": [
+   {
+    "label": "bed",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.03,
+    "human": "real object"
+   },
+   {
+    "label": "closet",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.7,
+    "human": "detector error"
+   },
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.81,
+    "human": "not labelled"
+   },
+   {
+    "label": "mirror",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.52,
+    "human": "not labelled"
+   },
+   {
+    "label": "pillow",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.08,
+    "human": "hallucination"
+   },
+   {
+    "label": "trash bin",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.75,
+    "human": "real object"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42446167 \u00b7 camera 3",
+  "dir": "arkitscenes__42446167_3",
+  "map_coverage": 0.52,
+  "claims": [
+   {
+    "label": "bed",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.7,
+    "human": "real object"
+   },
+   {
+    "label": "chair",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.28,
+    "human": "real object"
+   },
+   {
+    "label": "mirror",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.85,
+    "human": "not labelled"
+   },
+   {
+    "label": "pillow",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.43,
+    "human": "real object"
+   },
+   {
+    "label": "radiator",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.04,
+    "human": "not labelled"
+   },
+   {
+    "label": "window",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42446167 \u00b7 camera 6",
+  "dir": "arkitscenes__42446167_6",
+  "map_coverage": 0.182,
+  "claims": [
+   {
+    "label": "ceiling light",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.68,
+    "human": "real object"
+   },
+   {
+    "label": "lamp",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.68,
+    "human": "detector error"
+   },
+   {
+    "label": "toilet",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42446167 \u00b7 camera 7",
+  "dir": "arkitscenes__42446167_7",
+  "map_coverage": 0.613,
+  "claims": [
+   {
+    "label": "bed",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.8,
+    "human": "real object"
+   },
+   {
+    "label": "chair",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.14,
+    "human": "detector error"
+   },
+   {
+    "label": "radiator",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   },
+   {
+    "label": "whiteboard",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 1.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42897629 \u00b7 camera 5",
+  "dir": "arkitscenes__42897629_5",
+  "map_coverage": 0.0,
+  "claims": [
+   {
+    "label": "lamp",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42897629 \u00b7 camera 6",
+  "dir": "arkitscenes__42897629_6",
+  "map_coverage": 0.364,
+  "claims": [
+   {
+    "label": "chair",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.48,
+    "human": "not labelled"
+   },
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.36,
+    "human": "real object"
+   },
+   {
+    "label": "plant",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.17,
+    "human": "not labelled"
+   },
+   {
+    "label": "table",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.38,
+    "human": "not labelled"
+   },
+   {
+    "label": "whiteboard",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.08,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/42897629 \u00b7 camera 7",
+  "dir": "arkitscenes__42897629_7",
+  "map_coverage": 0.04,
+  "claims": [
+   {
+    "label": "chair",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.05,
+    "human": "not labelled"
+   },
+   {
+    "label": "radiator",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/44358499 \u00b7 camera 1",
+  "dir": "arkitscenes__44358499_1",
+  "map_coverage": 0.718,
+  "claims": [
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.15,
+    "human": "not labelled"
+   },
+   {
+    "label": "fireplace",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.18,
+    "human": "detector error"
+   },
+   {
+    "label": "pillow",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.79,
+    "human": "detector error"
+   },
+   {
+    "label": "plant",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.05,
+    "human": "not labelled"
+   },
+   {
+    "label": "toilet",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.63,
+    "human": "detector error"
+   },
+   {
+    "label": "trash bin",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   },
+   {
+    "label": "tv",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.17,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/44358499 \u00b7 camera 4",
+  "dir": "arkitscenes__44358499_4",
+  "map_coverage": 0.414,
+  "claims": [
+   {
+    "label": "pillow",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.37,
+    "human": "real object"
+   },
+   {
+    "label": "radiator",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.15,
+    "human": "not labelled"
+   },
+   {
+    "label": "sofa",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.58,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/44358499 \u00b7 camera 5",
+  "dir": "arkitscenes__44358499_5",
+  "map_coverage": 0.157,
+  "claims": [
+   {
+    "label": "ceiling light",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.37,
+    "human": "detector error"
+   },
+   {
+    "label": "lamp",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.37,
+    "human": "not labelled"
+   },
+   {
+    "label": "mirror",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.19,
+    "human": "real object"
+   },
+   {
+    "label": "plant",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.31,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/44358499 \u00b7 camera 6",
+  "dir": "arkitscenes__44358499_6",
+  "map_coverage": 0.301,
+  "claims": [
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.84,
+    "human": "not labelled"
+   },
+   {
+    "label": "refrigerator",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.21,
+    "human": "detector error"
+   },
+   {
+    "label": "trash bin",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   },
+   {
+    "label": "washer",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.84,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/44358499 \u00b7 camera 7",
+  "dir": "arkitscenes__44358499_7",
+  "map_coverage": 0.109,
+  "claims": [
+   {
+    "label": "plant",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "real object"
+   },
+   {
+    "label": "tv",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/45662924 \u00b7 camera 1",
+  "dir": "arkitscenes__45662924_1",
+  "map_coverage": 0.307,
+  "claims": [
+   {
+    "label": "door",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.95,
+    "human": "not labelled"
+   },
+   {
+    "label": "fireplace",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.39,
+    "human": "not labelled"
+   },
+   {
+    "label": "plant",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.93,
+    "human": "not labelled"
+   },
+   {
+    "label": "tv",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.39,
+    "human": "detector error"
+   },
+   {
+    "label": "window",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.9,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/45662924 \u00b7 camera 2",
+  "dir": "arkitscenes__45662924_2",
+  "map_coverage": 0.312,
+  "claims": [
+   {
+    "label": "chair",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.65,
+    "human": "not labelled"
+   },
+   {
+    "label": "plant",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.74,
+    "human": "not labelled"
+   },
+   {
+    "label": "table",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.64,
+    "human": "not labelled"
+   },
+   {
+    "label": "tv",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.29,
+    "human": "detector error"
+   },
+   {
+    "label": "window",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.42,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/45662924 \u00b7 camera 3",
+  "dir": "arkitscenes__45662924_3",
+  "map_coverage": 0.711,
+  "claims": [
+   {
+    "label": "chair",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.25,
+    "human": "not labelled"
+   },
+   {
+    "label": "lamp",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.88,
+    "human": "not labelled"
+   },
+   {
+    "label": "mirror",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 1.0,
+    "human": "not labelled"
+   },
+   {
+    "label": "plant",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.14,
+    "human": "real object"
+   },
+   {
+    "label": "radiator",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.53,
+    "human": "not labelled"
+   },
+   {
+    "label": "table",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.87,
+    "human": "not labelled"
+   },
+   {
+    "label": "window",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.32,
+    "human": "real object"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/45662924 \u00b7 camera 5",
+  "dir": "arkitscenes__45662924_5",
+  "map_coverage": 0.701,
+  "claims": [
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.94,
+    "human": "not labelled"
+   },
+   {
+    "label": "lamp",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.76,
+    "human": "detector error"
+   },
+   {
+    "label": "microwave",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.64,
+    "human": "not labelled"
+   },
+   {
+    "label": "towel",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.97,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/45662924 \u00b7 camera 6",
+  "dir": "arkitscenes__45662924_6",
+  "map_coverage": 0.511,
+  "claims": [
+   {
+    "label": "bed",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.99,
+    "human": "not labelled"
+   },
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.9,
+    "human": "not labelled"
+   },
+   {
+    "label": "plant",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.07,
+    "human": "not labelled"
+   },
+   {
+    "label": "table",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.99,
+    "human": "real object"
+   },
+   {
+    "label": "tv",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.99,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/45662924 \u00b7 camera 7",
+  "dir": "arkitscenes__45662924_7",
+  "map_coverage": 0.683,
+  "claims": [
+   {
+    "label": "door",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.3,
+    "human": "real object"
+   },
+   {
+    "label": "radiator",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.07,
+    "human": "detector error"
+   },
+   {
+    "label": "window",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.1,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47331972 \u00b7 camera 3",
+  "dir": "arkitscenes__47331972_3",
+  "map_coverage": 0.0,
+  "claims": [
+   {
+    "label": "plant",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   },
+   {
+    "label": "window",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47331990 \u00b7 camera 4",
+  "dir": "arkitscenes__47331990_4",
+  "map_coverage": 0.193,
+  "claims": [
+   {
+    "label": "lamp",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.01,
+    "human": "not labelled"
+   },
+   {
+    "label": "window",
+    "map_check": "kept",
+    "map_verdict": "supported",
+    "region_covered": 0.01,
+    "human": "real object"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47331990 \u00b7 camera 6",
+  "dir": "arkitscenes__47331990_6",
+  "map_coverage": 0.136,
+  "claims": [
+   {
+    "label": "table",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 1.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47333441 \u00b7 camera 2",
+  "dir": "arkitscenes__47333441_2",
+  "map_coverage": 0.0,
+  "claims": [
+   {
+    "label": "bed",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   },
+   {
+    "label": "blanket",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   },
+   {
+    "label": "pillow",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "hallucination"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47333441 \u00b7 camera 3",
+  "dir": "arkitscenes__47333441_3",
+  "map_coverage": 0.021,
+  "claims": [
+   {
+    "label": "pillow",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47430038 \u00b7 camera 0",
+  "dir": "arkitscenes__47430038_0",
+  "map_coverage": 0.749,
+  "claims": [
+   {
+    "label": "kettle",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.36,
+    "human": "detector error"
+   },
+   {
+    "label": "toilet",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.36,
+    "human": "not labelled"
+   },
+   {
+    "label": "trash bin",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.36,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47430038 \u00b7 camera 1",
+  "dir": "arkitscenes__47430038_1",
+  "map_coverage": 0.0,
+  "claims": [
+   {
+    "label": "kettle",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47430038 \u00b7 camera 3",
+  "dir": "arkitscenes__47430038_3",
+  "map_coverage": 0.053,
+  "claims": [
+   {
+    "label": "kettle",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "detector error"
+   },
+   {
+    "label": "toilet",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.11,
+    "human": "not labelled"
+   }
+  ]
+ },
+ {
+  "id": "arkitscenes/47430038 \u00b7 camera 7",
+  "dir": "arkitscenes__47430038_7",
+  "map_coverage": 0.113,
+  "claims": [
+   {
+    "label": "bathtub",
+    "map_check": "flagged",
+    "map_verdict": "contradicted",
+    "region_covered": 0.58,
+    "human": "detector error"
+   },
+   {
+    "label": "ceiling light",
+    "map_check": "flagged",
+    "map_verdict": "no coverage",
+    "region_covered": 0.0,
+    "human": "not labelled"
+   }
+  ]
+ }
+]

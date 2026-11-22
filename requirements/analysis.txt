@@ -1,0 +1,5 @@
+# Regenerate every table and figure from the committed raw records (no GPU), Python 3.12.
+-e .[dev,figures]
+# The example panel also re-runs SAM 3 on CPU (needs the dev views and SAM 3 weights):
+torch==2.14.1
+transformers==5.19.0

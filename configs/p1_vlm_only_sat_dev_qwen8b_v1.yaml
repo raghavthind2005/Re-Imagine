@@ -1,0 +1,19 @@
+name: p1_vlm_only_sat_dev_qwen8b_v1
+seed: 0
+data:
+  benchmark: sat
+  split: dev
+  split_file: data/splits/sat.json
+  val_parquet: cache/hf/SAT/SAT_val.parquet
+  test_parquet: cache/hf/SAT/SAT_test.parquet
+  image_dir: cache/sat_images
+view:
+  mode: images
+vlm:
+  backend: qwen_local
+  model_id: Qwen/Qwen3-VL-8B-Instruct
+  dtype: float16
+  max_pixels: 589824   # 768 x 768 per image
+generation:
+  max_tokens: 16
+  temperature: 0.0

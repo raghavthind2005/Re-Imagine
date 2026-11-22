@@ -1,0 +1,16 @@
+{
+  "kernel": "reimagine-p1-smoke10",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 5400,
+  "pip": "-U transformers accelerate pyarrow opencv-python-headless pyyaml huggingface_hub",
+  "setup": [
+    "hf download array/SAT SAT_val.parquet SAT_test.parquet --repo-type dataset --local-dir cache/hf/SAT",
+    "hf download nyu-visionx/VSI-Bench test.jsonl arkitscenes.zip scannet.zip scannetpp.zip --repo-type dataset --local-dir cache/hf/VSI-Bench",
+    "mkdir -p cache/vsibench_videos && cd cache/vsibench_videos && for z in arkitscenes scannet scannetpp; do unzip -q -o ../hf/VSI-Bench/$z.zip; done && ls | head && ls */ | head -5 && find . -name '*.mp4' | wc -l"
+  ],
+  "commands": [
+    "{py} scripts/run_eval.py --config configs/p1_vlm_only_sat_dev_qwen8b_v1.yaml --limit 10 --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/run_eval.py --config configs/p1_vlm_only_vsi_dev_sparse8_qwen8b_v1.yaml --limit 10 --runs-root {work}/runs --cache-dir {work}/cache/vlm",
+    "{py} scripts/run_eval.py --config configs/p1_vlm_only_vsi_dev_full32_qwen8b_v1.yaml --limit 10 --runs-root {work}/runs --cache-dir {work}/cache/vlm"
+  ]
+}

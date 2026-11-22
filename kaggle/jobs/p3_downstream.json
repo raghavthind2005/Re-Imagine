@@ -1,0 +1,26 @@
+{
+  "kernel": "reimagine-p3-downstream",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 10200,
+  "kernel_sources": [
+    "raghavthind05/reimagine-p2-imagine-vsi100",
+    "raghavthind05/reimagine-p2-imagine-sat97"
+  ],
+  "extra_datasets": [
+    "raghavthind05/sam3-weights"
+  ],
+  "pip": "-U transformers==5.19.0 accelerate pyarrow opencv-python-headless pyyaml huggingface_hub einops safetensors",
+  "setup": [
+    "pip install -q --no-deps git+https://github.com/facebookresearch/vggt@a288dd0f14786c93483e45524328726ab7b1b4ce && python3 -c \"from vggt.models.vggt import VGGT; import torch; print('vggt ok, torch', torch.__version__)\"",
+    "hf download array/SAT SAT_val.parquet SAT_test.parquet --repo-type dataset --local-dir cache/hf/SAT",
+    "hf download nyu-visionx/VSI-Bench test.jsonl arkitscenes.zip scannet.zip scannetpp.zip --repo-type dataset --local-dir cache/hf/VSI-Bench",
+    "mkdir -p cache/vsibench_videos && cd cache/vsibench_videos && for z in arkitscenes scannet scannetpp; do unzip -q -o ../hf/VSI-Bench/$z.zip; done && ls | head && ls */ | head -5 && find . -name '*.mp4' | wc -l",
+    "for k in vsi100 sat97; do mkdir -p /kaggle/working/cache_$k && cp -r /kaggle/input/notebooks/raghavthind05/reimagine-p2-imagine-$k/cache/. /kaggle/working/cache_$k/; ls /kaggle/working/cache_$k; done"
+  ],
+  "commands": [
+    "{py} scripts/downstream_filter.py --config configs/p2_imagine_vsi_sub200_sparse8_top2_qwen8b_v1.yaml --run /kaggle/input/notebooks/raghavthind05/reimagine-p2-imagine-vsi100/runs/p2_imagine_vsi_sub200_sparse8_top2_qwen8b_v1-n100 --cache-dir {work}/cache_vsi100 --out {work}/runs/downstream_vsi100 --stage objects --sam3-weights $(dirname $(find /kaggle/input -path '*sam3*' -name 'model.safetensors' | head -1))",
+    "{py} scripts/downstream_filter.py --config configs/p2_imagine_sat_persp_circular_top2_qwen8b_v1.yaml --run /kaggle/input/notebooks/raghavthind05/reimagine-p2-imagine-sat97/runs/p2_imagine_sat_persp_circular_top2_qwen8b_v1 --cache-dir {work}/cache_sat97 --out {work}/runs/downstream_sat97 --stage objects --sam3-weights $(dirname $(find /kaggle/input -path '*sam3*' -name 'model.safetensors' | head -1))",
+    "{py} scripts/downstream_filter.py --config configs/p2_imagine_vsi_sub200_sparse8_top2_qwen8b_v1.yaml --run /kaggle/input/notebooks/raghavthind05/reimagine-p2-imagine-vsi100/runs/p2_imagine_vsi_sub200_sparse8_top2_qwen8b_v1-n100 --cache-dir {work}/cache_vsi100 --out {work}/runs/downstream_vsi100 --stage answers --sam3-weights $(dirname $(find /kaggle/input -path '*sam3*' -name 'model.safetensors' | head -1))",
+    "{py} scripts/downstream_filter.py --config configs/p2_imagine_sat_persp_circular_top2_qwen8b_v1.yaml --run /kaggle/input/notebooks/raghavthind05/reimagine-p2-imagine-sat97/runs/p2_imagine_sat_persp_circular_top2_qwen8b_v1 --cache-dir {work}/cache_sat97 --out {work}/runs/downstream_sat97 --stage answers --sam3-weights $(dirname $(find /kaggle/input -path '*sam3*' -name 'model.safetensors' | head -1))"
+  ]
+}

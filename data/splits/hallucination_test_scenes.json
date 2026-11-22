@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "seed": 20261015,
+  "source": "test_scenes of data/splits/vsibench.json, stratified by dataset",
+  "n": 20,
+  "use": "one pre-registered confirmation run of hallucination flagging"
+ },
+ "split": {
+  "scenes": [
+   "arkitscenes/41142280",
+   "arkitscenes/41159555",
+   "arkitscenes/42897550",
+   "arkitscenes/42898849",
+   "arkitscenes/42899698",
+   "arkitscenes/45663114",
+   "arkitscenes/47204578",
+   "arkitscenes/47331970",
+   "arkitscenes/47333932",
+   "arkitscenes/47429912",
+   "scannet/scene0046_01",
+   "scannet/scene0144_00",
+   "scannet/scene0221_01",
+   "scannet/scene0356_00",
+   "scannet/scene0633_00",
+   "scannet/scene0684_01",
+   "scannetpp/40aec5fffa",
+   "scannetpp/b0a08200c9",
+   "scannetpp/c49a8c6cff",
+   "scannetpp/c4c04e6d6c"
+  ]
+ }
+}

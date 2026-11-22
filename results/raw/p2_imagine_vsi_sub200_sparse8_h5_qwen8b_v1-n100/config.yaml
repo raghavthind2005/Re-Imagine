@@ -1,0 +1,36 @@
+config_file: configs/p2_imagine_vsi_sub200_sparse8_h5_qwen8b_v1.yaml
+data:
+  benchmark: vsibench
+  id_file: data/splits/imagine_subset.json
+  id_key: vsi_ids
+  jsonl: cache/hf/VSI-Bench/test.jsonl
+  split: dev
+  split_file: data/splits/vsibench.json
+  video_root: cache/vsibench_videos
+generation:
+  max_tokens: 16
+  temperature: 0.0
+imagine:
+  beam_width: 2
+  explore_threshold: 8.0
+  forward_depth_fraction: 0.125
+  forward_label_m: 0.25
+  helpful_threshold: 5.0
+  max_evidence: 2
+  max_repeat: 3
+  n_helpful: 2
+  n_steps: 1
+  turn_deg: 9.0
+limit: 100
+name: p2_imagine_vsi_sub200_sparse8_h5_qwen8b_v1
+seed: 0
+svc: {}
+view:
+  mode: sparse
+  n_heldout: 8
+  n_observed: 8
+vlm:
+  backend: qwen_local
+  dtype: float16
+  max_pixels: 200704
+  model_id: Qwen/Qwen3-VL-8B-Instruct

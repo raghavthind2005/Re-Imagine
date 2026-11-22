@@ -1,0 +1,31 @@
+{
+ "meta": {
+  "seed": 20261013,
+  "source": "scenes of data/splits/imagine_subset.json (dev), stratified by dataset",
+  "n": 20
+ },
+ "split": {
+  "scenes": [
+   "arkitscenes/41069025",
+   "arkitscenes/41069048",
+   "arkitscenes/42446167",
+   "arkitscenes/42897629",
+   "arkitscenes/44358499",
+   "arkitscenes/45662924",
+   "arkitscenes/47331972",
+   "arkitscenes/47331990",
+   "arkitscenes/47333441",
+   "arkitscenes/47430038",
+   "scannet/scene0146_01",
+   "scannet/scene0196_00",
+   "scannet/scene0474_04",
+   "scannet/scene0500_00",
+   "scannet/scene0574_01",
+   "scannet/scene0648_00",
+   "scannetpp/286b55a2bf",
+   "scannetpp/38d58a7a31",
+   "scannetpp/5748ce6f01",
+   "scannetpp/d755b3d9d8"
+  ]
+ }
+}

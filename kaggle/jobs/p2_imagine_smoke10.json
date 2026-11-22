@@ -1,0 +1,27 @@
+{
+  "kernel": "reimagine-p2-imagine-smoke10",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 5400,
+  "extra_datasets": [
+    "raghavthind05/svc-weights"
+  ],
+  "pip": "-U transformers==5.19.0 accelerate pyarrow opencv-python-headless pyyaml huggingface_hub pillow roma einops open-clip-torch kornia fire splines 'imageio[ffmpeg]' colorama diffusers scipy safetensors tqdm viser gradio",
+  "setup": [
+    "pip uninstall -y -q torchao && python3 -c \"from diffusers.models import AutoencoderKL; import open_clip, gradio, roma, kornia, splines; print('svc imports ok')\"",
+    "git clone -q https://github.com/Stability-AI/stable-virtual-camera /kaggle/svc && cd /kaggle/svc && git checkout -q fe19948e9b7bea261ab2db780a59656131404a83",
+    "cd /kaggle/svc && sed -i 's#stabilityai/stable-diffusion-2-1-base#sd2-community/stable-diffusion-2-1-base#' seva/modules/autoencoder.py && grep -n 'stable-diffusion-2-1-base' seva/modules/autoencoder.py && python3 -c \"from diffusers.models import AutoencoderKL; AutoencoderKL.from_pretrained('sd2-community/stable-diffusion-2-1-base', subfolder='vae'); print('vae ok')\"",
+    "cd /kaggle/svc && sed -i 's/with sdpa_kernel(SDPBackend.FLASH_ATTENTION):/with sdpa_kernel([SDPBackend.FLASH_ATTENTION, SDPBackend.EFFICIENT_ATTENTION, SDPBackend.MATH]):/' seva/modules/transformer.py && grep -n 'sdpa_kernel(' seva/modules/transformer.py",
+    "pip install -q --no-deps git+https://github.com/facebookresearch/vggt@a288dd0f14786c93483e45524328726ab7b1b4ce && python3 -c \"from vggt.models.vggt import VGGT; import torch; print('vggt ok, torch', torch.__version__)\"",
+    "hf download array/SAT SAT_val.parquet SAT_test.parquet --repo-type dataset --local-dir cache/hf/SAT",
+    "hf download nyu-visionx/VSI-Bench test.jsonl arkitscenes.zip scannet.zip scannetpp.zip --repo-type dataset --local-dir cache/hf/VSI-Bench",
+    "mkdir -p cache/vsibench_videos && cd cache/vsibench_videos && for z in arkitscenes scannet scannetpp; do unzip -q -o ../hf/VSI-Bench/$z.zip; done && ls | head && ls */ | head -5 && find . -name '*.mp4' | wc -l"
+  ],
+  "commands": [
+    "{py} scripts/run_imagine.py --config configs/p2_imagine_vsi_sub200_sparse8_qwen8b_v1.yaml --run-id p2_imagine_vsi_sub200_sparse8_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage geom --device cuda:1",
+    "{py} scripts/run_imagine.py --config configs/p2_imagine_sat_persp_circular_qwen8b_v1.yaml --run-id p2_imagine_sat_persp_circular_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage geom --device cuda:1",
+    "{py} scripts/run_imagine.py --config configs/p2_imagine_vsi_sub200_sparse8_qwen8b_v1.yaml --run-id p2_imagine_vsi_sub200_sparse8_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage vlm",
+    "({py} scripts/run_imagine.py --config configs/p2_imagine_vsi_sub200_sparse8_qwen8b_v1.yaml --run-id p2_imagine_vsi_sub200_sparse8_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage svc --svc-repo /kaggle/svc --svc-weights $(dirname $(find /kaggle/input -name 'modelv1.1.safetensors' | head -1)) --device cuda:0 & CUDA_VISIBLE_DEVICES=1 {py} scripts/run_imagine.py --config configs/p2_imagine_sat_persp_circular_qwen8b_v1.yaml --run-id p2_imagine_sat_persp_circular_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage svc --svc-repo /kaggle/svc --svc-weights $(dirname $(find /kaggle/input -name 'modelv1.1.safetensors' | head -1)) --device cuda:0 > {work}/runs/svc_sat.log 2>&1; wait)",
+    "{py} scripts/run_imagine.py --config configs/p2_imagine_vsi_sub200_sparse8_qwen8b_v1.yaml --run-id p2_imagine_vsi_sub200_sparse8_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage vlm --sheets",
+    "{py} scripts/run_imagine.py --config configs/p2_imagine_sat_persp_circular_qwen8b_v1.yaml --run-id p2_imagine_sat_persp_circular_qwen8b_v1-n10 --limit 10 --runs-root {work}/runs --cache-dir {work}/cache --stage vlm --sheets"
+  ]
+}

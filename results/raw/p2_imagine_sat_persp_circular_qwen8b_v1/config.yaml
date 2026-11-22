@@ -1,0 +1,36 @@
+config_file: configs/p2_imagine_sat_persp_circular_qwen8b_v1.yaml
+data:
+  benchmark: sat
+  id_file: data/splits/imagine_subset.json
+  id_key: sat_perspective_ids
+  image_dir: cache/sat_images
+  split: dev
+  split_file: data/splits/sat.json
+  test_parquet: cache/hf/SAT/SAT_test.parquet
+  val_parquet: cache/hf/SAT/SAT_val.parquet
+generation:
+  max_tokens: 16
+  temperature: 0.0
+imagine:
+  beam_width: 2
+  explore_threshold: 8.0
+  forward_depth_fraction: 0.125
+  forward_label_m: 0.25
+  helpful_threshold: 8.0
+  max_evidence: 2
+  max_repeat: 3
+  n_helpful: 2
+  n_steps: 1
+  turn_deg: 9.0
+limit: null
+name: p2_imagine_sat_persp_circular_qwen8b_v1
+seed: 0
+svc: {}
+view:
+  circular: true
+  mode: images
+vlm:
+  backend: qwen_local
+  dtype: float16
+  max_pixels: 589824
+  model_id: Qwen/Qwen3-VL-8B-Instruct

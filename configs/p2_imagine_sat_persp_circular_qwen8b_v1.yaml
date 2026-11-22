@@ -1,0 +1,36 @@
+# imagine mode on the 97 SAT dev perspective questions, strict circular scoring.
+# Paired baseline: p2_vlm_only_sat_dev_circular_qwen8b_v1 restricted to the same ids.
+name: p2_imagine_sat_persp_circular_qwen8b_v1
+seed: 0
+data:
+  benchmark: sat
+  split: dev
+  split_file: data/splits/sat.json
+  val_parquet: cache/hf/SAT/SAT_val.parquet
+  test_parquet: cache/hf/SAT/SAT_test.parquet
+  image_dir: cache/sat_images
+  id_file: data/splits/imagine_subset.json
+  id_key: sat_perspective_ids
+view:
+  mode: images
+  circular: true
+vlm:
+  backend: qwen_local
+  model_id: Qwen/Qwen3-VL-8B-Instruct
+  dtype: float16
+  max_pixels: 589824
+generation:
+  max_tokens: 16
+  temperature: 0.0
+imagine:
+  n_steps: 1
+  max_repeat: 3
+  beam_width: 2
+  n_helpful: 2
+  max_evidence: 2
+  explore_threshold: 8.0
+  helpful_threshold: 8.0
+  turn_deg: 9.0
+  forward_depth_fraction: 0.125
+  forward_label_m: 0.25
+svc: {}

@@ -1,0 +1,24 @@
+# Full video (32 frames) on the fixed 200-question subset, for a paired gap against
+# the 4/8/16-frame sweep. 336 x 336 per frame: 32 frames at 448 x 448 ran out of
+# memory on a T4 (see p1 full32 v2), so this differs from the sweep in resolution.
+name: p2_vlm_only_vsi_sub200_full32_qwen8b_v1
+seed: 0
+data:
+  benchmark: vsibench
+  split: dev
+  split_file: data/splits/vsibench.json
+  jsonl: cache/hf/VSI-Bench/test.jsonl
+  video_root: cache/vsibench_videos
+  id_file: data/splits/imagine_subset.json
+  id_key: vsi_ids
+view:
+  mode: full
+  n_frames: 32
+vlm:
+  backend: qwen_local
+  model_id: Qwen/Qwen3-VL-8B-Instruct
+  dtype: float16
+  max_pixels: 112896
+generation:
+  max_tokens: 16
+  temperature: 0.0

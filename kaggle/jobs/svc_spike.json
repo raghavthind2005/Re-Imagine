@@ -1,0 +1,24 @@
+{
+  "kernel": "reimagine-svc-spike",
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_s": 7200,
+  "extra_datasets": [
+    "raghavthind05/svc-weights"
+  ],
+  "pip": "-U pyarrow opencv-python-headless pyyaml huggingface_hub pillow roma einops open-clip-torch kornia fire splines 'imageio[ffmpeg]' colorama diffusers scipy safetensors tqdm viser gradio",
+  "setup": [
+    "pip uninstall -y -q torchao && python3 -c \"from diffusers.models import AutoencoderKL; import open_clip, gradio, roma, kornia, splines; print('svc imports ok')\"",
+    "git clone -q https://github.com/Stability-AI/stable-virtual-camera /kaggle/svc && cd /kaggle/svc && git checkout -q fe19948e9b7bea261ab2db780a59656131404a83",
+    "cd /kaggle/svc && sed -i 's#stabilityai/stable-diffusion-2-1-base#sd2-community/stable-diffusion-2-1-base#' seva/modules/autoencoder.py && grep -n 'stable-diffusion-2-1-base' seva/modules/autoencoder.py && python3 -c \"from diffusers.models import AutoencoderKL; AutoencoderKL.from_pretrained('sd2-community/stable-diffusion-2-1-base', subfolder='vae'); print('vae ok')\"",
+    "cd /kaggle/svc && sed -i 's/with sdpa_kernel(SDPBackend.FLASH_ATTENTION):/with sdpa_kernel([SDPBackend.FLASH_ATTENTION, SDPBackend.EFFICIENT_ATTENTION, SDPBackend.MATH]):/' seva/modules/transformer.py && grep -n 'sdpa_kernel(' seva/modules/transformer.py",
+    "hf download array/SAT SAT_val.parquet --repo-type dataset --local-dir cache/hf/SAT",
+    "hf download nyu-visionx/VSI-Bench arkitscenes.zip --repo-type dataset --local-dir cache/hf/VSI-Bench",
+    "mkdir -p cache/vsibench_videos && cd cache/vsibench_videos && unzip -q -o ../hf/VSI-Bench/arkitscenes.zip && find . -name '*.mp4' | wc -l",
+    "ls -la /kaggle/input/*/ | head -20"
+  ],
+  "commands": [
+    "{py} scripts/svc_spike_inputs.py --out /kaggle/spike_inputs",
+    "{py} scripts/svc_spike.py driver --svc-repo /kaggle/svc --weights $(dirname $(find /kaggle/input -name 'modelv1.1.safetensors' | head -1)) --images /kaggle/spike_inputs/sat_dev.png /kaggle/spike_inputs/arkit_dev_0.png /kaggle/spike_inputs/arkit_dev_1.png --out {work}/runs/svc_spike --budget-s 3000 --variants lowvram_bf16_576 lowvram_fp16_576 lowvram_fp16_576_s20 lowvram_fp16_384_s20 lowvram_fp16_384_T8_s20",
+    "{py} scripts/svc_spike.py driver --svc-repo /kaggle/svc --weights $(dirname $(find /kaggle/input -name 'modelv1.1.safetensors' | head -1)) --images /kaggle/spike_inputs/sat_dev.png /kaggle/spike_inputs/arkit_dev_0.png /kaggle/spike_inputs/arkit_dev_1.png --out {work}/runs/svc_spike --budget-s 3000 --gallery lowvram_fp16_576_s20"
+  ]
+}
